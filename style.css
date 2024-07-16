@@ -1,0 +1,25 @@
+
+.carro{
+    background-color: black;
+}
+
+.imgA{
+    height: 600px;
+}
+
+.imgB{
+    height: 600px;
+}
+
+.imgC{
+    height: 600px;
+}
+.tarjeta{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
