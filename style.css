@@ -26,7 +26,7 @@ body {
 }
 
 .navbar-logo {
-  height: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 100px; /* Ajusta el tamaño según sea necesario */
   filter: brightness(50%);
   transition: filter 0.3s ease;
   position: relative;
@@ -35,6 +35,22 @@ body {
 
 .navbar-logo:hover {
   filter: brightness(100%); /* Ilumina la imagen al pasar el ratón */
+}
+
+.log{
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.letra{
+  text-transform: uppercase;
+}
+
+.perfi{
+  width: 500px;
+  height: 500px;
 }
 
 /* Para evitar que la navbar se baje debido al movimiento del logo */
@@ -142,6 +158,38 @@ footer .container {
 .error{
   color: #f50924;
   font-size: 20px;
+}
+
+/*Estilo Fin*/
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+.perfi {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 100%;
+  max-width: 500px; /* Ajusta este valor según sea necesario */
+}
+.footer-logo {
+  width: 30px; /* Ajusta el tamaño del logo según sea necesario */
+}
+.cilsa-link {
+  text-decoration: none;
+}
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
 }
 
 /*Modo oscuro-modo claro*/
