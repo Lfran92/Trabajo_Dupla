@@ -1,131 +1,167 @@
 .nav-link {
-    color: white;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #b70811; /* Cambia el color al pasar el  */
-    background-color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+  color: white;
+  transition: color 0.3s ease;
+}
 
-  }
-  
-  .nav-link.active:hover {
-    color: #b70811; /* Cambia el color al pasar el  */
-    background-color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-  }
+.nav-link:hover {
+  color: #b70811; /* Cambia el color al pasar el  */
+  background-color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 
-  body {
-    background-color: #232528;
-    color: white; /* Color del texto por defecto */
-  }
+}
 
-  .navbar-logo {
-    height: 80px; /* Ajusta el tamaño según sea necesario */
-    filter: brightness(50%);
-    transition: filter 0.3s ease;
-    position: relative;
-    top: -5px; /* Ajusta este valor según sea necesario */
-  }
-  
-  .navbar-logo:hover {
-    filter: brightness(100%); /* Ilumina la imagen al pasar el ratón */
-  }
-  
-  /* Para evitar que la navbar se baje debido al movimiento del logo */
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
+.nav-link.active:hover {
+  color: #b70811; /* Cambia el color al pasar el  */
+  background-color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
 
-  /* Estilos para el carrusel */
+body {
+  background-color: #232528;
+  color: white; /* Color del texto por defecto */
+}
+
+.navbar-logo {
+  height: 80px; /* Ajusta el tamaño según sea necesario */
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+  position: relative;
+  top: -5px; /* Ajusta este valor según sea necesario */
+}
+
+.navbar-logo:hover {
+  filter: brightness(100%); /* Ilumina la imagen al pasar el ratón */
+}
+
+/* Para evitar que la navbar se baje debido al movimiento del logo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para el carrusel */
 .carousel {
-    max-width: 800px; /* Establece el ancho máximo del carrusel */
-    margin: 0 auto; /* Centra el carrusel horizontalmente */
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Asegura que las imágenes se ajusten bien dentro del carrusel */
-  }
+  max-width: 800px; /* Establece el ancho máximo del carrusel */
+  margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
 
-  body {
-    /* background: #e8cbc0; */
-    /* background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
-    background: linear-gradient(to right, #e8cbc0, #636fa4);  */
-    min-height: 100vh;
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que las imágenes se ajusten bien dentro del carrusel */
+}
+
+body {
+  /* background: #e8cbc0; */
+  /* background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+  background: linear-gradient(to right, #e8cbc0, #636fa4);  */
+  min-height: 100vh;
 
 }
 
 .mb0{
-    color: #232528;
+  color: #232528;
 }
 
 .social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
 }
 
 .social-link:hover, .social-link:focus {
-    background: #ddd;
-    text-decoration: none;
-    color: #555;
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
 }
 
+/* Efectos para las cards */
 .team-card h5 {
-    color: black;
-  }
-  
-  /* Efecto hover para las cards */
-  .team-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
+  color: black;
+}
 
-  /* Estilos para el footer */
+
+.team-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para el footer */
 .footer-logo {
-    width: 30px; /* Ajusta el tamaño según sea necesario */
-    margin-left: 0px; /* Espacio entre el texto y el logo */
-  }
-  
-  /* Añade padding al container del footer */
-  footer .container {
-    padding: 20px; /* Ajusta el padding según sea necesario */
-  }
+  width: 30px; 
+  margin-left: 0px; 
+}
 
-  /* Añade padding al container del footer */
 footer .container {
-    padding: 20px; /* Ajusta el padding según sea necesario */
-  }
-  
-  /* Eliminar subrayado de enlaces en el footer */
-  .no-underline {
-    text-decoration: none;
-  }
+  padding: 20px; 
+}
 
-  .cilsa-link {
-    transition: color 0.3s, font-size 0.3s;
-  }
-  
-  .cilsa-link:hover {
-    color: #ffcc00; /* Cambia este color según prefieras */
-    font-size: 1.2em; /* Ajusta el tamaño según prefieras */
-  }
+
+.no-underline {
+  text-decoration: none;
+}
+
+.cilsa-link {
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.cilsa-link:hover {
+  color: #f3f1e7; /* Cambia este color según prefieras */
+  font-size: 1.2em; /* Ajusta el tamaño según prefieras */
+}
+
+.colorA{
+  color: white;
+}
+
+/*Modo oscuro-modo claro*/
+
+
+
+body.dark-mode {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+body.dark-mode .navbar {
+  background-color: #ffffff;
+}
+
+body.dark-mode .form-control {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+body.dark-mode .btn {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+body.dark-mode .bg-dark {
+  background-color: #1c1c1c !important;
+}
+
+body.dark-mode .contraste {
+background-color: #ffffff;
+color: #1c1c1c;
+}
+
+
+
+
+
