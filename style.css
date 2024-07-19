@@ -129,6 +129,21 @@ footer .container {
   color: white;
 }
 
+.colorB{
+  background-color: #232528;
+  color: #ffffff;
+  border-color: #666;
+}
+
+.colorB:hover{
+  border-color: #581e1e;
+}
+
+.error{
+  color: #f50924;
+  font-size: 20px;
+}
+
 /*Modo oscuro-modo claro*/
 
 

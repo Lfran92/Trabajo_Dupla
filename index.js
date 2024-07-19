@@ -12,17 +12,39 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
 
 //Validacion de datos
 
-document.getElementById("formulario").addEventListener('submit', function(event){
-  let nombre = document.getElementById("nombre").value;
-  let apellido = document.getElementById("apellido").value;
-  let mail =document.getElementById("mail").value;
-  let mailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+$(document).ready(function() {
+  $('#formulario').on('submit', function(event) {
+      // Limpiar mensajes de error previos
+      $('.error').text('');
 
-  if(nombre ==="" || apellido ==="" || !mailValid.test(mail)){
-    alert("Por favor completa todos los campos");
-    event.preventDefault();
-  }
-  
+      // Obtener valores de los campos
+      let nombre = $('#nombre').val();
+      let apellido = $('#apellido').val();
+      let mail = $('#mail').val();
+      let mailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      let isValid = true;
+
+      // Validar campos
+      if (nombre === "") {
+          $('#nombreError').text('Por favor, completa el campo de nombre.');
+          isValid = false;
+          event.preventDefault();
+      }else if (apellido === "") {
+          $('#apellidoError').text('Por favor, completa el campo de apellido.');
+          isValid = false;
+          event.preventDefault();
+      }else if (!mailValid.test(mail)) {
+          $('#mailError').text('Por favor, ingresa un correo electrónico válido.');
+          isValid = false;
+          event.preventDefault();
+      }else if (!isValid) {
+          event.preventDefault();
+      }else{
+        $(this).trigger('reset');
+        event.preventDefault();
+      }
+  });
 });
 
 //Modo oscuro o claro
