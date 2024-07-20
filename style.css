@@ -9,7 +9,6 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
   transition: all 0.3s ease;
-
 }
 
 .nav-link.active:hover {
@@ -25,61 +24,57 @@ body {
   color: white; /* Color del texto por defecto */
 }
 
-.navbar-logo {
+.logo-img {
   height: 100px; /* Ajusta el tamaño según sea necesario */
   filter: brightness(50%);
   transition: filter 0.3s ease;
-  position: relative;
-  top: -5px; /* Ajusta este valor según sea necesario */
+  margin-right: 10px;
 }
 
-.navbar-logo:hover {
+.logo-img:hover {
   filter: brightness(100%); /* Ilumina la imagen al pasar el ratón */
 }
 
-.log{
+.log {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.letra{
+.letra {
   text-transform: uppercase;
 }
 
-.perfi{
+.perfi {
   width: 500px;
   height: 500px;
 }
 
-/* Para evitar que la navbar se baje debido al movimiento del logo */
 .navbar-brand {
   display: flex;
   align-items: center;
 }
 
-/* Estilos para el carrusel */
 .carousel {
+  width: 100%;
   max-width: 800px; /* Establece el ancho máximo del carrusel */
   margin: 0 auto; /* Centra el carrusel horizontalmente */
 }
 
+.carousel-inner {
+  height: 400px; /* Establece la altura del carrusel */
+}
+
 .carousel-inner img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover; /* Asegura que las imágenes se ajusten bien dentro del carrusel */
 }
 
-body {
-  /* background: #e8cbc0; */
-  /* background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
-  background: linear-gradient(to right, #e8cbc0, #636fa4);  */
-  min-height: 100vh;
-
-}
-
-.mb0{
+.mb0 {
   color: #232528;
 }
 
@@ -102,11 +97,9 @@ body {
   color: #555;
 }
 
-/* Efectos para las cards */
 .team-card h5 {
   color: black;
 }
-
 
 .team-card {
   transition: transform 0.3s, box-shadow 0.3s;
@@ -117,7 +110,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilos para el footer */
 .footer-logo {
   width: 30px; 
   margin-left: 0px; 
@@ -126,7 +118,6 @@ body {
 footer .container {
   padding: 20px; 
 }
-
 
 .no-underline {
   text-decoration: none;
@@ -141,60 +132,61 @@ footer .container {
   font-size: 1.2em; /* Ajusta el tamaño según prefieras */
 }
 
-.colorA{
+.colorA {
   color: white;
 }
 
-.colorB{
+.colorB {
   background-color: #232528;
   color: #ffffff;
   border-color: #666;
 }
 
-.colorB:hover{
+.colorB:hover {
   border-color: #581e1e;
 }
 
-.error{
+.error {
   color: #f50924;
   font-size: 20px;
 }
 
-/*Estilo Fin*/
-
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1;
 }
+
 .perfi {
   display: flex;
   justify-content: center;
 }
+
 .card {
   width: 100%;
   max-width: 500px; /* Ajusta este valor según sea necesario */
 }
+
 .footer-logo {
   width: 30px; /* Ajusta el tamaño del logo según sea necesario */
 }
-.cilsa-link {
+
+cilsa-link {
   text-decoration: none;
 }
+
 footer {
   position: relative;
   width: 100%;
   bottom: 0;
 }
-
-/*Modo oscuro-modo claro*/
-
-
 
 body.dark-mode {
   background-color: #ffffff;
@@ -220,11 +212,24 @@ body.dark-mode .bg-dark {
 }
 
 body.dark-mode .contraste {
-background-color: #ffffff;
-color: #1c1c1c;
+  background-color: #ffffff;
+  color: #1c1c1c;
 }
 
+.logo-header {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #444; /* Línea separadora */
+}
 
+.logo-header img {
+  max-height: 100px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
 
-
-
+.logo-header h1 {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}

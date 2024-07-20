@@ -59,5 +59,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+const carousel = document.getElementById('carouselExampleIndicators');
+const carouselInner = carousel.querySelector('.carousel-inner');
+
+// Preload images
+const images = carousel.querySelectorAll('img');
+images.forEach(img => {
+  const newImg = new Image();
+  newImg.src = img.src;
+});
+
+carousel.addEventListener('slide.bs.carousel', function (event) {
+  const activeItem = event.relatedTarget;
+  const newHeight = activeItem.querySelector('img').offsetHeight;
+  carouselInner.style.height = `${newHeight}px`;
+});
+
 
   
